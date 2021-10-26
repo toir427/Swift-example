@@ -15,11 +15,10 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         
         // ok alert
-        let btn = UIButton()
-        btn.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+        let btn = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
         btn.backgroundColor = .red
         btn.setTitle("Alert", for: .normal)
-        btn.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+        btn.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         view.addSubview(btn)
         
         // yes or no alert
